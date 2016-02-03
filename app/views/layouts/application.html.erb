@@ -7,8 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+<div class="row">
+	<div class="col-md-3">
+  		<h1>BoothNotes</h1>
+		<p>Entreprenuer and Investor. Hobby economist, physicist, engineer.</p>
+  	<ul id="fixednav">
+ 		<li><%= link_to "about", about_path %><li>
+		<li><%= link_to "essays", essays_path %><li>
+		<li><%= link_to "notes", notes_path %><li>
+		<li><%= link_to "quotes", notes_path %><li>
+		<li><%= link_to "instagram", instagram_path %><li>
+		<li><%= link_to "twitter", instagram_path %><li>
+		<li><%= link_to "contact", instagram_path %><li>
+	</ul>
+</div>
 
-<%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
 
 </body>
 </html>
